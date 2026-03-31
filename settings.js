@@ -12,15 +12,14 @@ function changeUsername() {
 function goBack() {
   // check if user has unsaved changes
   const inputVal = document.getElementById("username").value;
-  const nameMatches = inputVal === localStorage.getItem("username");
+  const nameMatches = localStorage.getItem("username");
 
-  // if name does not match but user is happy then go back
-  if (!nameMatches) {
+  if (nameMatches === inputVal || (nameMatches === null && inputVal === "anon")) {
+    window.location.href = "./index.html";
+  } else {
     if (confirm("You will lose unsaved changes.")) {
       window.location.href = "./index.html";
     }
-  } else {
-    window.location.href = "./index.html";
   }
 }
 
