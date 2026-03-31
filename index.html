@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght,ELSH@100..900,2&display=swap" rel="stylesheet">
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>My Blog</title> 
+</head> 
+
+<body>
+    <main>
+        <div id="header">
+            <img class="moon" src="./assets/moon-safe.gif">
+            <h1>My Blog</h1> 
+            <img class="moon" src="./assets/moon-safe.gif">
+        </div>
+
+        <p>Let the world know your thoughts.</p>
+
+        <div id="form">
+            <textarea id="post" name="post" placeholder="Today, I did..." value=""></textarea>
+            <button class="btn" onclick="postMessage();">Post</button>
+        </div>
+
+        <div id="hot">
+            <h2>Hot Posts</h2>
+            <div class="hot-bar">
+                <a class="btn" href="./settings.html">Settings</a>
+                <button class="btn-secondary" onclick="deletePosts();">Clear</button>
+            </div>
+            
+        </div>
+        
+
+        <ul id="anchor"></ul>
+    </main>
+</body> 
+
+</html>

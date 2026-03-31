@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght,ELSH@100..900,2&display=swap" rel="stylesheet">
+    <script src="./settings.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>My Blog</title> 
+</head> 
+
+<body>
+    <main>
+        <div id="header">
+            <img class="moon" src="./assets/moon-safe.gif">
+            <h1>My Blog</h1> 
+            <img class="moon" src="./assets/moon-safe.gif">
+        </div>
+
+        <button class="btn" onclick="goBack();">Back</button>
+
+        <div id="settings">
+          <div class="settings-item">
+            <h3>Change Username</h3>
+            <input type="text" id="username" />
+            <button class="btn-secondary" onclick="changeUsername();">Save</button>
+          </div>
+
+          <div class="settings-item">
+            <h3>Export Posts</h3>
+            <p>Opens a new tab with all your posts.</p>
+            <button class="btn-secondary" onclick="exportPosts();">Export</button>
+          </div>
+        </div>
+    </main>
+</body> 
+
+</html>

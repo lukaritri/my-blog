@@ -1,0 +1,214 @@
+/* -------- Reset -------- */
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+*:not(dialog) {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Increase line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+/* -------- End of Reset -------- */
+
+* {
+  font-family: 'Handjet';
+  letter-spacing: 0.2rem;
+  color: rgb(255, 0, 212);
+  font-size: 16px;
+}
+
+body {
+  max-width: 800px;
+  margin: auto;
+  background-image: url("./assets/space-comet.gif");
+  background-attachment: fixed;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0);
+  padding: 16px;
+  margin: 80px 0px;
+  border: 2px solid rgb(255, 0, 212);
+  border-radius: 4px;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding-bottom: 24px;
+}
+
+.moon {
+  height: 100px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  /* background-color: yellow; */
+}
+
+textarea, input {
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  padding: 6px 10px;
+  border-radius: 4px;
+  border-color: transparent;
+}
+
+textarea {
+  width: 100%;
+  min-height: 4rem;
+  resize: vertical;
+}
+
+textarea:focus, input:focus {
+  outline: 2px solid rgb(255, 0, 212);
+  box-shadow: 0 0 8px rgb(255, 0, 212);
+}
+
+p {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  color: rgb(15, 154, 150);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  color: rgb(15, 154, 150);
+}
+
+#hot {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+
+.btn {
+  height: 2rem;
+  padding: 4px 8px;
+  background-color: rgb(15, 154, 150);
+  color: white;
+  border: 2px outset;
+  border-color: rgb(114, 168, 166);
+  border-radius: 4px;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: inline-block;
+  width: fit-content;
+  text-align: center;
+}
+
+.btn:hover {
+  border: 2px inset;
+  border-color: rgb(114, 168, 166);
+  cursor: pointer;
+}
+
+.btn-secondary {
+  height: 2rem;
+  padding: 4px 8px;
+  color: rgb(141, 211, 208);
+  background-color: rgb(5, 64, 62);
+  border: 2px outset;
+  border-color: rgb(62, 135, 133);
+  border-radius: 4px;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: inline-block;
+  width: fit-content;
+  text-align: center;
+}
+
+.btn-secondary:hover {
+  border: 2px inset;
+  border-color: rgb(62, 135, 133);
+  cursor: pointer;
+}
+
+#settings {
+  padding: 16px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.settings-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.settings-item h3 {
+  padding: 0;
+  /* background-color: yellow; */
+  line-height: 1;
+}
+
+.settings-item p {
+  padding: 0;
+  /* background-color: blue; */
+  line-height: 1;
+}
